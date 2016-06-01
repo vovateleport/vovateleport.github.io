@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>rnd-portal</title>
+    <meta charset="utf-8">
+
+    <script type="text/javascript" src="rnd-portal-jsdeps.js"></script>
+    <script type="text/javascript" src="rnd-portal-fastopt.js"></script>
+    <style>
+        body {
+            line-height: 2;
+        }
+
+        .modal-backdrop {
+            z-index: 100;
+            position: absolute;
+            top:0;  left:0;
+            width: 100%;  height: 100%;
+            opacity: 0.5;
+            background-color: gray;
+        }
+
+        .modal-content {
+            z-index: 100;
+            position: absolute;
+            top:200px; left: 200px;
+            width: 200px;
+            padding: 2em;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+<p>Example of rendering part of react component in a separate html-subtree, here directly in body. <a href="https://github.com/vovateleport/rnd/tree/portal/src/main/scala">source</a></p>
+<div id="node0">
+</div>
+<script type="text/javascript">
+    rnd.App().main();
+</script>
+</body>
+</html>
